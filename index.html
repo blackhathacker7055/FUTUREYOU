@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="mycontainer">
+    <div class="screen ">
+      <div class="signup-container ">
+        <h2>Login</h2>
+        <form action="#" method="post">
+          <div class="input-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required />
+          </div>
+
+          <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+
+          <button type="submit">Login</button>
+
+          <p class="signup-text">
+            Don’t have an account? <a href="#">Sign up</a>
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <div class="screen ">
+      <div class="login-container ">
+        <h2>Create Account</h2>
+        <form action="#" method="post">
+          <div class="input-group">
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname" required />
+          </div>
+
+          <div class="input-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+
+          <div class="input-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required />
+          </div>
+
+          <div class="input-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+
+          <div class="input-group">
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" name="confirm-password" required />
+          </div>
+
+          <button type="submit">Sign Up</button>
+
+          <p class="signup-text">
+            Already have an account? <a href="index.html">Login</a>
+          </p>
+        </form>
+      </div>
+    </div>
+
+    <div class="screen active ">
+      <div class="sidebar">
+        <h2>FutureYou</h2>
+        <ul>
+          
+            <li class="active">🏠 Dashboard</li>
+            <li>🎯 My Goals</li>
+            <li>📅 Deadlines</li>
+            <li>📈 Progress</li>
+            <li>⚙️ Settings</li>
+            <li>🚪 Logout</li>
+          
+        </ul>
+      </div>
+
+      <div class="main">
+        <header>
+          <h1>Welcome, User 👋</h1>
+          <div class="profile">
+            <img src="https://i.pravatar.cc/40" alt="Profile" />
+          </div>
+        </header>
+
+        <section class="cards">
+          <div class="card">
+            <h3>Active Goals</h3>
+            <p>5</p>
+          </div>
+          <div class="card">
+            <h3>Completed</h3>
+            <p>12</p>
+          </div>
+          <div class="card">
+            <h3>Pending Tasks</h3>
+            <p>3</p>
+          </div>
+          <div class="card">
+            <h3>Add Goal</h3>
+            <p>+</p>
+          </div>
+        </section>
+
+        <section class="goals">
+          <h2>My Goals</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Title</th>
+                <th>Deadline</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Finish React Module</td>
+                <td>10 Nov 2025</td>
+                <td><span class="status in-progress">In Progress</span></td>
+              </tr>
+              <tr>
+                <td>Read “Atomic Habits”</td>
+                <td>15 Nov 2025</td>
+                <td><span class="status completed">Completed</span></td>
+              </tr>
+              <tr>
+                <td>Workout 5x/Week</td>
+                <td>Ongoing</td>
+                <td><span class="status active">Active</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

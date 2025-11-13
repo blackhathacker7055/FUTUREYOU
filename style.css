@@ -1,0 +1,187 @@
+/* General Styles */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background: #f5f6fa;
+  color: #333;
+}
+
+.mycontainer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Screen Layouts */
+.screen {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+.screen.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Login & Signup Containers */
+.signup-container, .login-container {
+  background: #fff;
+  padding: 2rem 3rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 350px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.input-group:focus {
+  border-color: #007bff;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background: #007bff;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+.signup-text {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.signup-text a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+/* Dashboard Layout */
+.sidebar {
+  width: 220px;
+  background: #1e1e2f;
+  color: white;
+  height: 100vh;
+  padding: 1rem;
+}
+
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.sidebar ul li:hover, .sidebar ul li.active {
+  background: #343456;
+}
+
+/* Main Content */
+.main {
+  flex: 1;
+  padding: 2rem;
+  background: #f5f6fa;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile img {
+  border-radius: 50%;
+}
+
+/* Cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Goals Table */
+.goals {
+  margin-top: 2rem;
+}
+
+.goals table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.goals th, .goals td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.status {
+  padding: 5px 10px;
+  border-radius: 6px;
+  color: white;
+  font-size: 12px;
+}
+
+.status.in-progress { background: orange; }
+.status.completed { background: green; }
+.status.active { background: #007bff; }
